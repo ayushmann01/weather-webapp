@@ -53,6 +53,6 @@ app.post("/", (request, res) => {
 
 
 
-app.listen(process.env.PORT |  3000, function () {
+app.listen(process.env.PORT ||  3000, function () {
     console.log("weather app started at port-3000");
 });
