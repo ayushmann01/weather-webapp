@@ -10,12 +10,12 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-const API_KEY = process.env.APIKEY;
-
 
 app.get("/", (request, response) => {
     response.sendFile(__dirname + "/index.html");
 });
+
+const API_KEY = process.env.APIKEY;
 
 app.post("/", (request, res) => {
 
